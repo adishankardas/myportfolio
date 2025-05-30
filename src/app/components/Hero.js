@@ -55,7 +55,7 @@ export default function Hero() {
                 <button className="hero-button connect-button">Let's Connect</button>
             </div>
             <a href="#about" className="scroll-down-arrow" aria-label="Scroll down">
-                &#8595;
+                ↓
             </a>
         </section>
     );

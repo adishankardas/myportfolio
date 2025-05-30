@@ -1,6 +1,6 @@
 'use client';
 import { MdSchool, MdWork, MdVerified } from "react-icons/md"; 
-import './About.css'; 
+import './About.css';
 import { SlBadge } from "react-icons/sl";
 
 export default function About() {
@@ -13,11 +13,11 @@ export default function About() {
                     I specialize in building responsive, fast, and user-friendly websites using modern technologies like React, Next.js, Node.js, and MongoDB.
                 </p>
                 <p className="about-description">
-                    With a strong foundation in Python, cybersecurity, and creative problem-solving, I aim to build meaningful digital experiences.
+                    With a strong foundation in Python, cybersecurity, and creative problem-solving, I'm aiming to build meaningful digital experiences.
                     I'm currently preparing for my Bachelor's in Computer Science and actively learning new technologies to contribute to open-source projects and global internships like GSoC.
                 </p>
                 <p className="about-description">
-                    Outside of tech, I'm deeply into martial arts and fitness. I believe in an “eagle mindset” — keep flying higher, no matter the storm.
+                    Outside of tech, I'm deeply into martial arts and fitness. I believe in an "eagle mindset" — keep flying higher, no matter the storm.
                 </p>
             </div>
             <div className="education">
