@@ -1,6 +1,6 @@
 "use client";
-import React, { useState, useEffect } from 'react';
-import './Hero.css';
+import React, { useState, useEffect } from &#39;react&#39;;
+import &#39;./Hero.css&#39;;
 
 const typingPhrases = [
   "Aspiring Software Engineer",
@@ -10,7 +10,7 @@ const typingPhrases = [
 ];
 
 function TypingEffect({ phrases, speed = 80, pause = 1200 }) {
-  const [text, setText] = useState('');
+  const [text, setText] = useState(&#39;&#39;);
   const [phraseIdx, setPhraseIdx] = useState(0);
   const [charIdx, setCharIdx] = useState(0);
   const [deleting, setDeleting] = useState(false);
@@ -40,19 +40,19 @@ export default function Hero() {
     return (
         <section className="hero-section">
             <h1 className="hero-title">
-                Hi, I'm <span className="hero-name">Adi Shankar Das</span>
+                Hi, I&#39;m <span className="hero-name">Adi Shankar Das</span>
             </h1>
             <h2 className="hero-subtitle">
                 <TypingEffect phrases={typingPhrases} />
             </h2>
             <p className="hero-description">
-                I'm dedicated to continually expanding my knowledge and skills as I grow into a proficient software engineer.
+                I&#39;m dedicated to continually expanding my knowledge and skills as I grow into a proficient software engineer.
             </p>
             <div className="hero-buttons">
                 <button className="hero-button resume-button">
                     Download Resume
                 </button>     
-                <button className="hero-button connect-button">Let's Connect</button>
+                <button className="hero-button connect-button">Let&#39;s Connect</button>
             </div>
             <a href="#about" className="scroll-down-arrow" aria-label="Scroll down">
                 ↓
