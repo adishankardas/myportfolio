@@ -1,5 +1,5 @@
 'use client';
-import { MdSchool, MdWork } from "react-icons/md"; 
+import { MdSchool, MdWork } from "react-icons/md";
 import './About.css';
 import { SlBadge } from "react-icons/sl";
 import React from 'react';
@@ -10,15 +10,15 @@ export default function About() {
             <div className="about-container">
                 <h2 className="about-title">About Me</h2>
                 <p className="about-description">
-                    Hello! I&#39;m Rohan, a passionate self-taught full-stack web developer and cybersecurity enthusiast from Chhattisgarh, India.
-                    I specialize in building responsive, fast, and user-friendly websites using modern technologies like React, Next.js, Node.js, and MongoDB.
+                    Hello! I&apos;m Rohan, a passionate self-taught full-stack web developer and cybersecurity enthusiast from Chhattisgarh, India.
                 </p>
                 <p className="about-description">
-                    With a strong foundation in Python, cybersecurity, and creative problem-solving, I&#39;m aiming to build meaningful digital experiences.
-                    I&#39;m currently preparing for my Bachelor&#39;s in Computer Science and actively learning new technologies to contribute to open-source projects and global internships like GSoC.
+                    With a strong foundation in Python, cybersecurity, and creative problem-solving, I&apos;m aiming to build meaningful digital experiences.
+                    I&apos;m currently preparing for my Bachelor&apos;s in Computer Science...
                 </p>
+
                 <p className="about-description">
-                    Outside of tech, I&#39;m deeply into martial arts and fitness. I believe in an &quot;eagle mindset&quot; — keep flying higher, no matter the storm.
+                    Outside of tech, I&apos;m deeply into martial arts and fitness. I believe in an &quot;eagle mindset&quot; — keep flying higher, no matter the storm.
                 </p>
             </div>
             <div className="education">
@@ -27,7 +27,7 @@ export default function About() {
                     Education
                 </h2>
                 <div className="education-details">
-                     <div className="education-card">
+                    <div className="education-card">
                         <div className="edu-school">XYZ University</div>
                         <div className="edu-degree">B.Sc. (Hons) Computer Science</div>
                         <div className="edu-year">2025 – 2028 (Expected)</div>
@@ -47,7 +47,7 @@ export default function About() {
                     Experience
                 </h2>
                 <div className="education-details">
-                     <div className="education-card">
+                    <div className="education-card">
                         <div className="edu-school">Full Stack Web Developer</div>
                         <div className="edu-degree">AstroShine</div>
                         <div className="edu-year">June 2022 - Present</div>

@@ -56,7 +56,7 @@ export default function Hero() {
                 <button className="hero-button resume-button">
                     Download Resume
                 </button>     
-                <button className="hero-button connect-button">Let&#39;s Connect</button>
+                <button className="hero-button connect-button"> Let&apos;s Connect</button>
             </div>
             <a href="#about" className="scroll-down-arrow" aria-label="Scroll down">
                 ↓

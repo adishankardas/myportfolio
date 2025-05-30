@@ -10,15 +10,15 @@ export default function Contact() {
         Get in <span className="contact-title-highlight">Touch</span>
       </h2>
       <p className="contact-subtitle">
-        Let&#39;s discuss your next project and collaborate.
+  Let&apos;s discuss your next project and collaborate.
       </p>
       <div className="contact-grid">
         {/* Left: Info */}
         <div className="contact-info">
-          <h3 className="contact-info-title">Let&#39;s Connect</h3>
+<h3 className="contact-info-title">Let&apos;s Connect</h3>
           <p className="contact-info-desc">
-            I&#39;m always excited to collaborate on new projects and challenges. Whether you have a specific project in mind or want to connect, I&#39;m here to help!
-          </p>
+  I&apos;m always excited to collaborate on new projects and challenges. Whether you have a specific project in mind or want to connect, I&apos;m here to help!
+</p>
           <div className="contact-info-list">
             <div className="contact-info-item">
               <span className="contact-info-icon"><MdEmail size={28} /></span>
