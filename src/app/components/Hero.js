@@ -41,7 +41,7 @@ export default function Hero() {
     return (
         <section className="hero-section">
             <h1 className="hero-title">
-                Hi, I'm <span className="hero-name">Adi Shankar Das</span>
+                Hi, I&#39;m <span className="hero-name">Adi Shankar Das</span>
             </h1>
             <h2 className="hero-subtitle">
                 <TypingEffect phrases={typingPhrases} />
@@ -53,7 +53,7 @@ export default function Hero() {
                 <button className="hero-button resume-button">
                     Download Resume
                 </button>     
-                <button className="hero-button connect-button">Let's Connect</button>
+                <button className="hero-button connect-button">Let&#39;s Connect</button>
             </div>
             <a href="#about" className="scroll-down-arrow" aria-label="Scroll down">
                 &#8595;
