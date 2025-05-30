@@ -8,15 +8,15 @@ export default function About() {
             <div className="about-container">
                 <h2 className="about-title">About Me</h2>
                 <p className="about-description">
-                    Hello! I&#39;m Rohan, a passionate self-taught full-stack web developer and cybersecurity enthusiast from Chhattisgarh, India.
+                    Hello! I&apos;m Rohan, a passionate self-taught full-stack web developer and cybersecurity enthusiast from Chhattisgarh, India.
                     I specialize in building responsive, fast, and user-friendly websites using modern technologies like React, Next.js, Node.js, and MongoDB.
                 </p>
                 <p className="about-description">
                     With a strong foundation in Python, cybersecurity, and creative problem-solving, I aim to build meaningful digital experiences.
-                    Currently, I&#39;m preparing for my Bachelor&#39;s in Computer Science and actively learning new technologies to contribute to open-source projects and global internships like GSoC.
+                    Currently, I&apos;m preparing for my Bachelor&apos;s in Computer Science and actively learning new technologies to contribute to open-source projects and global internships like GSoC.
                 </p>
                 <p className="about-description">
-                    Outside of tech, I’m deeply into martial arts and fitness. I believe in an “eagle mindset” — keep flying higher, no matter the storm.
+                    Outside of tech, I&apos;m deeply into martial arts and fitness. I believe in an “eagle mindset” — keep flying higher, no matter the storm.
                 </p>
             </div>
             <div className="education">
