@@ -1,14 +1,18 @@
 "use client";
 import React, { useState, useEffect } from'react';
 import './Hero.css';
-
+import PropTypes from 'prop-types';
 const typingPhrases = [
   "Aspiring Software Engineer",
   "Full Stack Web Developer",
   "Cybersecurity Enthusiast",
   "1st Year Computer Science Student"
 ];
-
+TypingEffect.propTypes = {
+  phrases: PropTypes.arrayOf(PropTypes.string).isRequired,
+  speed: PropTypes.number,
+  pause: PropTypes.number,
+};
 function TypingEffect({ phrases, speed = 80, pause = 1200 }) {
   const [text, setText] = useState('');
   const [phraseIdx, setPhraseIdx] = useState(0);

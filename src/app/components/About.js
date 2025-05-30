@@ -1,5 +1,5 @@
 'use client';
-import { MdSchool, MdWork, MdVerified } from "react-icons/md"; 
+import { MdSchool, MdWork } from "react-icons/md"; 
 import './About.css';
 import { SlBadge } from "react-icons/sl";
 import React from 'react';
@@ -18,7 +18,7 @@ export default function About() {
                     I&#39;m currently preparing for my Bachelor&#39;s in Computer Science and actively learning new technologies to contribute to open-source projects and global internships like GSoC.
                 </p>
                 <p className="about-description">
-                    Outside of tech, I&#39;m deeply into martial arts and fitness. I believe in an "eagle mindset" — keep flying higher, no matter the storm.
+                    Outside of tech, I&#39;m deeply into martial arts and fitness. I believe in an &quot;eagle mindset&quot; — keep flying higher, no matter the storm.
                 </p>
             </div>
             <div className="education">
