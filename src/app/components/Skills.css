@@ -1,0 +1,30 @@
+.skills-section {
+  padding: 4rem 2rem;
+  background-color: var(--background);
+  color: var(--foreground);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill-item {
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid #222;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.skill-item:hover {
+  background-color: #ff007711;
+  border-color: #f80f70;
+}
