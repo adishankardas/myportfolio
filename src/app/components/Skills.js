@@ -1,6 +1,7 @@
 'use client';
 
 import './Skills.css';
+import React from 'react';
 
 export default function Skills() {
   const skills = [

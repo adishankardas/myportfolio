@@ -1,7 +1,8 @@
-&#39;use client&#39;;
+'use client';
 import { MdSchool, MdWork, MdVerified } from "react-icons/md"; 
-import &#39;./About.css&#39;;
+import './About.css';
 import { SlBadge } from "react-icons/sl";
+import React from 'react';
 
 export default function About() {
     return (

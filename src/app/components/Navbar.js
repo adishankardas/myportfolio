@@ -4,6 +4,7 @@ import './Navbar.css'; // We'll define styles here or in globals.css if you pref
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
 
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);

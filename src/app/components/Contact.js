@@ -1,7 +1,7 @@
-&#39;use client&#39;;
-
+'use client';
+import React from 'react';
 import { MdEmail, MdLocationOn } from "react-icons/md";
-import &#39;./Contact.css&#39;;
+import './Contact.css';
 
 export default function Contact() {
   return (

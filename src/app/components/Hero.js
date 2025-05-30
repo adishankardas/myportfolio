@@ -1,6 +1,6 @@
 "use client";
-import React, { useState, useEffect } from &#39;react&#39;;
-import &#39;./Hero.css&#39;;
+import React, { useState, useEffect } from'react';
+import './Hero.css';
 
 const typingPhrases = [
   "Aspiring Software Engineer",
@@ -10,7 +10,7 @@ const typingPhrases = [
 ];
 
 function TypingEffect({ phrases, speed = 80, pause = 1200 }) {
-  const [text, setText] = useState(&#39;&#39;);
+  const [text, setText] = useState('');
   const [phraseIdx, setPhraseIdx] = useState(0);
   const [charIdx, setCharIdx] = useState(0);
   const [deleting, setDeleting] = useState(false);
