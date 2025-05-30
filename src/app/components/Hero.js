@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
 
-// ...rest of your code...
 const typingPhrases = [
   "Aspiring Software Engineer",
   "Full Stack Web Developer",
@@ -41,19 +40,19 @@ export default function Hero() {
     return (
         <section className="hero-section">
             <h1 className="hero-title">
-                Hi, I&#39;m <span className="hero-name">Adi Shankar Das</span>
+                Hi, I'm <span className="hero-name">Adi Shankar Das</span>
             </h1>
             <h2 className="hero-subtitle">
                 <TypingEffect phrases={typingPhrases} />
             </h2>
             <p className="hero-description">
-                I am dedicated to continually expanding my knowledge and skills as I grow into a proficient software engineer.
+                I'm dedicated to continually expanding my knowledge and skills as I grow into a proficient software engineer.
             </p>
             <div className="hero-buttons">
                 <button className="hero-button resume-button">
                     Download Resume
                 </button>     
-                <button className="hero-button connect-button">Let&#39;s Connect</button>
+                <button className="hero-button connect-button">Let's Connect</button>
             </div>
             <a href="#about" className="scroll-down-arrow" aria-label="Scroll down">
                 &#8595;
