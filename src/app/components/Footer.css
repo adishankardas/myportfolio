@@ -25,7 +25,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #ff69b4;
+  color: #ff3589;
 }
 
 .footer-text {
@@ -53,7 +53,7 @@
 }
 
 .footer-link:hover {
-  color: #ff69b4;
+  color: #ff3589;
 }
 
 .footer-social-icons {
@@ -69,7 +69,7 @@
 }
 
 .footer-social-link:hover {
-  color: #ff69b4;
+  color: #ff3589;
 }
 
 .footer-bottom {

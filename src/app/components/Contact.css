@@ -14,8 +14,8 @@
 }
 
 .contact-title-highlight {
-  color: #ff69b4;
-  text-shadow: 0 2px 16px #ff69b4;
+  color: #ff3589;
+  text-shadow: 0 2px 16px #ff3589;
 }
 
 .contact-subtitle {
@@ -68,7 +68,7 @@
   padding: 0.5rem;
   display: flex;
   align-items: center;
-  color: #ff69b4;
+  color: #ff3589;
 }
 
 .contact-info-label {
@@ -108,7 +108,7 @@
 }
 
 .contact-input:focus, .contact-textarea:focus {
-  border-color: #ff69b4;
+  border-color: #ff3589;
   outline: none;
 }
 
@@ -133,7 +133,7 @@
 }
 
 .contact-submit:hover {
-  background: #ff69b4;
+  background: #ff3589;
   color: #fff;
   transform: translateY(-2px) scale(1.03);
 }
