@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import './Projects.css';
+import React from 'react';
 
 export default function Projects() {
   const projects = [

@@ -1,14 +1,9 @@
 'use client';
 
 import './Skills.css';
+import React from 'react';
 
 export default function Skills() {
-  const skills = [
-    'HTML5', 'CSS3', 'JavaScript',
-    'React.js', 'Next.js', 'Node.js',
-    'MongoDB', 'Python', 'Cybersecurity',
-    'Git & GitHub', 'Linux', 'SQL'
-  ];
 
   return (
    <section id='skills' className="skills-section">
