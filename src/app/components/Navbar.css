@@ -10,7 +10,7 @@
   z-index: 1000;
   display: flex;
   padding: 1.5rem;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(25px);
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.30);
   /* subtle shadow */
 }
@@ -166,4 +166,5 @@
     font-size: 3rem;
     /* Adjusted for smaller screens */
   }
+  
 }

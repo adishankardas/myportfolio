@@ -86,3 +86,10 @@
 .edu-details{
     font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+.education-card {
+    width: 100%;
+
+}
+}
