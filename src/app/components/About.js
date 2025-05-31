@@ -79,7 +79,7 @@ export default function About() {
                         <div className="edu-school">Cyber Security Analyst Virtual Intern</div>
                         <div className="edu-degree">ANZ Internship</div>
                         <div className="edu-year">March 2025 - April 2025</div>
-                        <div className="edu-year">Remote</div>
+                        <div className="edu-year">Remote internship</div>
                         <div className="edu-details">Here&#39;s how you can structure your education card to look like the LinkedIn style in your screenshot, including an icon, school name, degree, dates, description, and skills.</div>
                     </div>
                 </div>
