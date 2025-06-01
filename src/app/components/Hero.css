@@ -22,8 +22,8 @@
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #ffddea, #ff3589, #f80f49, #ffddea, #ff35b2, #f80f49, #ffddea);
-  background-size: 400% 100%;
+  background: linear-gradient(90deg, #ffddea,  var(--colortheme-light), var(--colortheme), #ffddea,  var(--colortheme-light), var(--colortheme), #ffddea);
+ background-size: 400% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -68,46 +68,46 @@
     color 0.3s,
     box-shadow 0.3s,
     transform 0.2s;
-  box-shadow: 0 2px 16px 0 rgba(255, 53, 137, 0.10);
+  box-shadow: 0 2px 16px 0 rgba(var(--colortheme-rgb), 0.10);
   text-decoration: none;
   display: inline-block;
 }
 
 .resume-button {
-  background: linear-gradient(90deg, #f15c9a, #ff1d68);
+  background: linear-gradient(90deg,  var(--colortheme-light), var(--colortheme));
   color: #fff;
-  box-shadow: 0 4px 24px 0 rgba(255, 53, 137, 0.25);
+  box-shadow: 0 4px 24px 0 rgba(var(--colortheme-rgb), 0.25);
   transition: background 0.8s ease, transform 0.8s ease, box-shadow 0.8s ease; /* Added transition for smooth change */
 }
 
 .resume-button:hover,
 .resume-button:focus {
-  background: linear-gradient(90deg, #ff1d68, #f15c9a);
+  background: linear-gradient(90deg, var(--colortheme),  var(--colortheme-light));
   color: #fff;
   transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 6px 32px 0 rgba(255, 53, 137, 0.25);
+  box-shadow: 0 6px 32px 0 rgba(var(--colortheme-rgb), 0.25);
 }
 
 
 .connect-button {
   background: transparent;
-  color: #ff1d68;
-  border: 2px solid #ff1d68;
-  box-shadow: 0 2px 16px 0 rgba(255, 53, 137, 0.10);
+  color: var(--colortheme);
+  border: 2px solid var(--colortheme);
+  box-shadow: 0 2px 16px 0 rgba(var(--colortheme-rgb), 0.10);
 }
 
 .connect-button:hover, .connect-button:focus {
-  background: #ff1d68;
+  background: var(--colortheme);
   color: #fff;
   transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 6px 32px 0 rgba(255, 53, 137, 0.18);
+  box-shadow: 0 6px 32px 0 rgba(var(--colortheme-rgb), 0.18);
 }
 
 .scroll-down-arrow {
   display: inline-block;
   margin-top: 2rem;
   font-size: 2.5rem;
-  color: #ff69b4;
+  color:  var(--colortheme-light);
   text-decoration: none;
   animation: bounce 1.5s infinite;
   transition: color 0.3s;
@@ -115,7 +115,7 @@
 }
 
 .scroll-down-arrow:hover {
-  color: #ff1d68;
+  color: var(--colortheme);
 }
 
 @keyframes bounce {

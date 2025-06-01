@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-section">
       <h2 className="contact-title">
-        Get in <span className="contact-title-highlight">Touch</span>
+        Get in Touch
       </h2>
       <p className="contact-subtitle">
   Let&apos;s discuss your next project and collaborate.

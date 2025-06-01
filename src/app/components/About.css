@@ -1,5 +1,5 @@
 .about-section {
-    padding: 4rem 2rem;
+    padding: 0rem 2rem;
     background-color: var(--background);
     color: var(--foreground);
     max-width: 1100px;
@@ -13,12 +13,12 @@
     font-weight: 1000;
     display: flex;
     justify-content: center;
-    background: linear-gradient(90deg, #ffddea, #ff3589, #f80f49, #ffddea, #ff35b2, #f80f55, #ffddea);
+    /* background: linear-gradient(90deg, #ffddea, var(--colortheme), #f80f49, #ffddea, #ff35b2, #f80f55, #ffddea); */
     background-size: 400% 100%;
     background-clip: text;
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: flowing-gradient 15s linear infinite;
+    animation: flowing-gradient 15s linear infinite; */
 }
 
 .about-description {
@@ -57,8 +57,8 @@
 }
 
 .education-card:hover {
-  box-shadow: 0 6px 32px 0 rgba(255, 20, 137, 0.06);
-  border-color: #ff3589;
+  box-shadow: 0 6px 32px 0 rgba(var(--colortheme-rgb), 0.06);
+  border-color: var(--colortheme);
   transform: translateY(-4px) scale(1.01);
 }
 
@@ -66,7 +66,7 @@
 .edu-school {
   font-weight: 700;
   font-size: 1.1rem;
-  color: #ff3589;
+  color: var(--colortheme);
   margin-bottom: 0.3rem;
 }
 .edu-degree {
@@ -78,7 +78,7 @@
 
 .edu-year {
   font-size: 0.85rem;
-  color: #ff3589;
+  color: var(--colortheme);
     margin-bottom: 0.3rem;
 
 }

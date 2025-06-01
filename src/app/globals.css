@@ -1,6 +1,10 @@
 :root {
   --background: #111111;
   --foreground: #ededed;
+  --colortheme: #ff1d68;
+  --colortheme-light: #ff69b4;
+  --colortheme-rgb: 255, 53, 137;
+
 }
 
 html,

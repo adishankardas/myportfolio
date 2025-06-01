@@ -14,7 +14,7 @@
 }
 
 .skills-title-highlight {
-  color: #ff3589;
+  color: var(--colortheme)
   /* text-shadow: 0 2px 16px #ff69b4; */
 }
 
@@ -62,7 +62,7 @@
 .skill-card:hover::before {
   opacity: 1;
   animation: gradientMove 2s linear infinite;
-  border: 2px solid #ff3589;
+  border: 2px solid var(--colortheme);
 
 }
 
@@ -83,7 +83,7 @@
 .skill-icon {
   font-size: 1.6rem;
   background: #2d2936;
-  color: #ff3589;
+  color: var(--colortheme);
   border-radius: 8px;
   padding: 0.4rem 0.7rem;
   display: flex;

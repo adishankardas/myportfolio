@@ -1,18 +1,22 @@
 "use client";
-import React, { useState, useEffect } from'react';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import './Hero.css';
 import PropTypes from 'prop-types';
+
 const typingPhrases = [
   "Aspiring Software Engineer",
   "Full Stack Web Developer",
   "Cybersecurity Enthusiast",
   "1st Year Computer Science Student"
 ];
+
 TypingEffect.propTypes = {
   phrases: PropTypes.arrayOf(PropTypes.string).isRequired,
   speed: PropTypes.number,
   pause: PropTypes.number,
 };
+
 function TypingEffect({ phrases, speed = 80, pause = 1200 }) {
   const [text, setText] = useState('');
   const [phraseIdx, setPhraseIdx] = useState(0);
@@ -41,26 +45,57 @@ function TypingEffect({ phrases, speed = 80, pause = 1200 }) {
 }
 
 export default function Hero() {
-    return (
-        <section className="hero-section">
-            <h1 className="hero-title">
-                Hi, I&#39;m <span className="hero-name">Adi Shankar Das</span>
-            </h1>
-            <h2 className="hero-subtitle">
-                <TypingEffect phrases={typingPhrases} />
-            </h2>
-            <p className="hero-description">
-                I&#39;m dedicated to continually expanding my knowledge and skills as I grow into a proficient software engineer.
-            </p>
-            <div className="hero-buttons">
-                <button className="hero-button resume-button">
-                    Download Resume
-                </button>     
-                <button className="hero-button connect-button"> Let&apos;s Connect</button>
-            </div>
-            <a href="#about" className="scroll-down-arrow" aria-label="Scroll down">
-                ↓
-            </a>
-        </section>
-    );
+  const animationProps = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6, ease: "easeOut" },
+  };
+
+  return (
+    <section className="hero-section">
+      <motion.h1
+        className="hero-title"
+        initial={animationProps.initial}
+        animate={animationProps.animate}
+        transition={{ ...animationProps.transition, delay: 0 }}
+      >
+        Hi, I&apos;m <span className="hero-name">Adi Shankar Das</span>
+      </motion.h1>
+      <motion.h2
+        className="hero-subtitle"
+        initial={animationProps.initial}
+        animate={animationProps.animate}
+        transition={{ ...animationProps.transition, delay: 0.2 }}
+      >
+        <TypingEffect phrases={typingPhrases} />
+      </motion.h2>
+      <motion.p
+        className="hero-description"
+        initial={animationProps.initial}
+        animate={animationProps.animate}
+        transition={{ ...animationProps.transition, delay: 0.4 }}
+      >
+        I&apos;m dedicated to continually expanding my knowledge and skills as I grow into a proficient software engineer.
+      </motion.p>
+      <motion.div
+        className="hero-buttons"
+        initial={animationProps.initial}
+        animate={animationProps.animate}
+        transition={{ ...animationProps.transition, delay: 0.6 }}
+      >
+        <button className="hero-button resume-button">Download Resume</button>
+        <button className="hero-button connect-button">Let&apos;s Connect</button>
+      </motion.div>
+      <motion.a
+        href="#about"
+        className="scroll-down-arrow"
+        aria-label="Scroll down"
+        initial={animationProps.initial}
+        animate={animationProps.animate}
+        transition={{ ...animationProps.transition, delay: 0.8 }}
+      >
+        ↓
+      </motion.a>
+    </section>
+  );
 }
