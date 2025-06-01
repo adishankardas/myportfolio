@@ -37,7 +37,10 @@ export default function About() {
     return (
         <section id="about" className="about-section">
             <AnimatedSection className="about-container">
-                <motion.h2 className="about-title" variants={fadeIn}>About Me</motion.h2>
+              <motion.h2 className="about-title" variants={fadeIn}>
+  <span className="about-title-main">About&nbsp;</span>{' '}
+  <span className="about-title-highlight">Me</span>
+</motion.h2>
                 <motion.p className="about-description" variants={fadeIn}>
                     Hello! I&apos;m Rohan, a passionate self-taught full-stack web developer and cybersecurity enthusiast from Chhattisgarh, India.
                 </motion.p>

@@ -1,10 +1,9 @@
 :root {
-  --background: #111111;
-  --foreground: #ededed;
-  --colortheme: #ff1d68;
-  --colortheme-light: #ff69b4;
-  --colortheme-rgb: 255, 53, 137;
-
+  --background: #0c0c0c; /* A darker shade for depth */
+  --foreground: #ededed; /* Keeping it readable */
+  --colortheme: #0078D4; /* Windows 11 primary blue */
+  --colortheme-light: #63AEE3; /* A lighter blue */
+  --colortheme-rgb: 0, 120, 212; /* RGB equivalent */
 }
 
 html,

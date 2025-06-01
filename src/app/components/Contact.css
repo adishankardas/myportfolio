@@ -8,7 +8,7 @@
 .contact-title {
   text-align: center;
   font-size: 2.6rem;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 0.2rem;
   letter-spacing: 1px;
   color: var(--colortheme);
@@ -114,8 +114,8 @@
 }
 
 .contact-submit {
-  background: var(--colortheme-light);
-  color: #18171c;
+  background: var(--colortheme);
+  color: #ffffff;
   font-weight: 700;
   font-size: 1.1rem;
   border: none;
@@ -129,8 +129,8 @@
 }
 
 .contact-submit:hover {
-  background: var(--colortheme);
-  color: #fff;
+  background: var(--colortheme-light);
+  color: #18171c;
   transform: translateY(-2px) scale(1.03);
 }
 

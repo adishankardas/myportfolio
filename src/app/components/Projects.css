@@ -40,6 +40,15 @@
   margin: 0 auto;
   line-height: 1.6;
 }
+.section-title-main {
+  font-weight: 700;
+  color: #fff;
+}
+
+.section-title-highlight {
+  color: var(--colortheme); /* Or use your preferred blue, e.g. #3b82f6 */
+  font-weight: 700;
+}
 
 .projects-grid {
   display: grid;

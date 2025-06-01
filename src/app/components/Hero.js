@@ -83,8 +83,26 @@ export default function Hero() {
         animate={animationProps.animate}
         transition={{ ...animationProps.transition, delay: 0.6 }}
       >
-        <button className="hero-button resume-button">Download Resume</button>
-        <button className="hero-button connect-button">Let&apos;s Connect</button>
+        <a
+          href="/MyResume.pdf"
+          download
+          className="hero-button resume-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download Resume
+        </a>
+        <button
+          className="hero-button connect-button"
+          onClick={() => {
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+        >
+          Let&apos;s Connect
+        </button>
       </motion.div>
       <motion.a
         href="#about"

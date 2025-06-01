@@ -10,7 +10,7 @@
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     padding-left: 0.75rem;
-    font-weight: 1000;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     /* background: linear-gradient(90deg, #ffddea, var(--colortheme), #f80f49, #ffddea, #ff35b2, #f80f55, #ffddea); */
@@ -20,7 +20,10 @@
     -webkit-text-fill-color: transparent;
     animation: flowing-gradient 15s linear infinite; */
 }
-
+.about-title-highlight {
+  color: var(--colortheme); /* Or use your preferred blue, e.g. #3b82f6 */
+  font-weight: 700;
+}
 .about-description {
     font-size: 1rem;
     line-height: 1.7;

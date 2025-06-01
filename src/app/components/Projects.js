@@ -1,7 +1,36 @@
 'use client';
 import Image from 'next/image';
 import './Projects.css';
+import { motion } from "framer-motion";
 import React from 'react';
+import PropTypes from 'prop-types';
+
+// Reuse the same animation variants from About section for consistency
+const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" }
+  }
+};
+// Reusable animated component
+const AnimatedSection = ({ children, className = "" }) => (
+  <motion.div
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, margin: "-50px 0px -50px 0px" }}
+    variants={fadeIn}
+    className={className}
+  >
+    {children}
+  </motion.div>
+);
+
+AnimatedSection.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string
+};
 
 export default function Projects() {
   const projects = [
@@ -54,14 +83,30 @@ export default function Projects() {
 
   return (
     <section id="projects" className="projects-section">
-      <div className="section-header">
-        <h2 className="section-title">My Projects</h2>
-        <p className="section-subtitle">A collection of my recent work and contributions</p>
-      </div>
+      <motion.div 
+        className="section-header"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeIn}
+      >
+<h2 className="section-title">
+  <span className="section-title-main">My</span>{' '}
+  <span className="section-title-highlight">Projects</span>
+</h2>        <p className="section-subtitle">A collection of my recent work and contributions</p>
+      </motion.div>
       
       <div className="projects-grid">
-        {projects.map((project) => (
-          <article key={project.id} className="project-card">
+        {projects.map((project, index) => (
+          <motion.article 
+            key={project.id}
+            className="project-card"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px 0px -50px 0px" }}
+            variants={fadeIn}
+            transition={{ delay: index * 0.1 }}
+          >
             <div className="card-header">
               <div className="project-image-container">
                 <Image
@@ -74,8 +119,8 @@ export default function Projects() {
                 <div className="image-overlay"></div>
               </div>
               <div className="project-tags">
-                {project.tags.map((tag, index) => (
-                  <span key={index} className="tag">{tag}</span>
+                {project.tags.map((tag, tagIndex) => (
+                  <span key={tagIndex} className="tag">{tag}</span>
                 ))}
               </div>
             </div>
@@ -101,7 +146,7 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </article>
+          </motion.article>
         ))}
       </div>
     </section>
