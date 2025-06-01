@@ -5,6 +5,7 @@ import { SlBadge } from "react-icons/sl";
 import { motion } from "framer-motion";
 import React from 'react';
 import PropTypes from 'prop-types';
+import Image from 'next/image';
 
 // Animation variants
 const fadeIn = {
@@ -15,6 +16,62 @@ const fadeIn = {
         transition: { duration: 0.6, ease: "easeOut" }
     }
 };
+const certifications = [
+  {
+    id: 1,
+    title: "Google Cybersecurity Professional Certificate",
+    issuer: "Google",
+    date: "Issued Mar 2025",
+    credential: "",
+    details: "Skills: Threat & Vulnerability Management · Incident Response · Linux · SQL · SIEM · Security Frameworks · Python",
+    image: "/certificates/google-cyber.png"
+  },
+  {
+    id: 2,
+    title: "Introduction to Generative AI",
+    issuer: "Google Cloud Skills Boost",
+    date: "Issued Apr 2025",
+    credential: "Credential ID 14529349",
+    details: "Skills: Generative AI · AI Fundamentals · Google Cloud AI",
+    image: "/certificates/google_Ai.png"
+  },
+  {
+    id: 3,
+    title: "Career Essentials in Generative AI",
+    issuer: "Microsoft and LinkedIn",
+    date: "Issued Aug 2024",
+    credential: "",
+    details: "Skills: Artificial Intelligence (AI) · Generative AI · Machine Learning",
+    image: "/certificates/generative- ai-microsoft.png"
+  },
+  {
+    id: 4,
+    title: "ChatGPT 101",
+    issuer: "Simplilearn",
+    date: "Issued Jul 2024",
+    credential: "Credential ID 6875123",
+    details: "Skills: ChatGPT · Prompt Engineering · Responsible AI · AI Basics",
+    image: "/certificates/chatgpt.png"
+  },
+  {
+    id: 5,
+    title: "Web Development",
+    issuer: "Internshala",
+    date: "Issued Sep 2024",
+    credential: "Credential ID 5e025m83ayk",
+    details: "Skills: Web Development · HTML · CSS · JavaScript · React · MySQL · PHP · DBMS · AI in Web Dev",
+    image: "/certificates/web-develop.png"
+  },
+  {
+    id: 6,
+    title: "German Language A1",
+    issuer: "Udemy",
+    date: "Issued Aug 2024",
+    credential: "",
+    details: "Skills: German · Deutsch · A1 Certification · Language Basics",
+    image: "/certificates/germana1.png"
+  },
+];
 
 const AnimatedSection = ({ children, className = "" }) => (
     <motion.div
@@ -34,6 +91,17 @@ AnimatedSection.propTypes = {
 };
 
 export default function About() {
+    const [selectedCertificate, setSelectedCertificate] = React.useState(null);
+
+    // Handler for clicking a certificate image
+    const handleCertificateClick = (image) => {
+        setSelectedCertificate(image);
+    };
+
+    const closeCertificate = () => {
+        setSelectedCertificate(null);
+    };
+
     return (
         <section id="about" className="about-section">
             <AnimatedSection className="about-container">
@@ -187,103 +255,58 @@ export default function About() {
                 </div>
             </AnimatedSection>
 
-            <AnimatedSection className="education">
+                 <AnimatedSection className="education">
                 <motion.h2 className="education-title" variants={fadeIn}>
                     <SlBadge style={{ verticalAlign: "middle", marginRight: "0.5rem", color: "var(--colortheme)" }} />
                     Certifications
                 </motion.h2>
                 <div className="education-details">
-                    <AnimatedSection className="education-card">
-         <div className="edu-school">Google Cybersecurity Professional Certificate</div>
-<div className="edu-degree">Coursera – Issued by Google</div>
-<div className="edu-year">Issued Sep 2024</div>
-<div className="edu-year">Credential ID GCP-5204-0458</div>
-<div className="edu-details">Skills: Network Security · Threat Analysis · SIEM · Incident Response · Linux · Python · NIST · Digital Forensics</div>
-
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                  <div className="edu-school">Career Essentials in Generative AI</div>
-<div className="edu-degree">LinkedIn Learning – Issued by Microsoft</div>
-<div className="edu-year">Issued Oct 2024</div>
-<div className="edu-year">Credential ID AI-CE-8347</div>
-<div className="edu-details">Skills: Generative AI · Prompt Engineering · Responsible AI · ChatGPT · Microsoft Azure AI</div>
-
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                  <div className="edu-school">Cybersecurity Analyst Job Simulation</div>
-<div className="edu-degree">Forage – In Collaboration with Tata Consultancy Services</div>
-<div className="edu-year">Completed March 2025</div>
-<div className="edu-year">Credential ID TCS-VSIM-0825</div>
-<div className="edu-details">Skills: IAM · Cybersecurity Strategy · Risk Management · Access Control · Technical Documentation</div>
-
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                  <div className="edu-school">Cybersecurity Virtual Internship</div>
-<div className="edu-degree">Forage – In Collaboration with Mastercard</div>
-<div className="edu-year">Completed March 2025</div>
-<div className="edu-year">Credential ID MC-VEXP-7735</div>
-<div className="edu-details">Skills: Security Awareness · Phishing Detection · Cybersecurity Training · Threat Reporting</div>
-
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                  <div className="edu-school">Cybersecurity Analyst Virtual Internship</div>
-<div className="edu-degree">Forage – In Collaboration with ANZ</div>
-<div className="edu-year">Completed April 2025</div>
-<div className="edu-year">Credential ID ANZ-9852-CSIM</div>
-<div className="edu-details">Skills: Risk Analysis · Incident Response · Data Protection · Cyber Risk Presentation</div>
-
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                  <div className="edu-school">Shields Up: Cybersecurity Analyst Internship</div>
-<div className="edu-degree">Forage – In Collaboration with AIG</div>
-<div className="edu-year">Completed March 2025</div>
-<div className="edu-year">Credential ID AIG-SHIELD-4482</div>
-<div className="edu-details">Skills: Breach Detection · Packet Analysis · Vulnerability Assessment · SIEM Investigation</div>
-
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                  <div className="edu-school">Cybersecurity Analyst Virtual Internship</div>
-<div className="edu-degree">Forage – In Collaboration with Telstra</div>
-<div className="edu-year">Completed May 2025</div>
-<div className="edu-year">Credential ID TEL-7861-CSIM</div>
-<div className="edu-details">Skills: Network Monitoring · Alert Triage · Cybersecurity Tools · Real-time Threat Response</div>
-
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                  <div className="edu-school">Front-End Web Development – CSS</div>
-<div className="edu-degree">Coursera / LinkedIn Learning</div>
-<div className="edu-year">Issued Aug 2023</div>
-<div className="edu-year">Credential ID CSS-1211-FWD</div>
-<div className="edu-details">Skills: HTML · CSS · Responsive Design · Flexbox · Grid · UI Styling</div>
-
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                  <div className="edu-school">Assets, Threats, and Vulnerabilities</div>
-<div className="edu-degree">Cybersecurity Essentials Program</div>
-<div className="edu-year">Issued July 2024</div>
-<div className="edu-year">Credential ID ATV-6293</div>
-<div className="edu-details">Skills: Risk Identification · Vulnerability Management · Asset Classification · Security Policy Design</div>
-
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                  <div className="edu-school">ChatGPT 101 – AI Usage & Prompt Engineering</div>
-<div className="edu-degree">LinkedIn Learning / Self-Paced Course</div>
-<div className="edu-year">Issued Oct 2024</div>
-<div className="edu-year">Credential ID GPT-101-AI</div>
-<div className="edu-details">Skills: Prompt Engineering · AI Chatbots · LLM Basics · AI Ethics · Automation</div>
-
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                  <div className="edu-school">Adobe Photoshop – Visual Design Basics</div>
-<div className="edu-degree">Self-Learning / Online Design Course</div>
-<div className="edu-year">Issued Sept 2024</div>
-<div className="edu-year">Credential ID PS-DSGN-5402</div>
-<div className="edu-details">Skills: Graphic Design · Photo Editing · Layers & Masking · Digital Composition · Branding Assets</div>
-
-                  
-                    </AnimatedSection>
+                    {certifications.map((cert) => (
+                        <AnimatedSection key={cert.id} className="education-card">
+                            <div className="certification-container">
+                                <div className="certification-image-container" onClick={() => handleCertificateClick(cert.image)}>
+                                    <Image
+                                        src={cert.image}
+                                        alt={`${cert.title} Certificate`}
+                                        width={200}
+                                        height={150}
+                                        className="certification-thumbnail"
+                                    />
+                                    <div className="image-overlay-text">Click to View</div>
+                                </div>
+                                <div className="certification-content">
+                                    <div className="edu-school">{cert.title}</div>
+                                    <div className="edu-degree">{cert.issuer}</div>
+                                    <div className="edu-year">{cert.date}</div>
+                                    <div className="edu-year">{cert.credential}</div>
+                                    <div className="edu-details">{cert.details}</div>
+                                </div>
+                            </div>
+                        </AnimatedSection>
+                    ))}
                 </div>
             </AnimatedSection>
+
+            {/* Certificate Modal */}
+            {selectedCertificate && (
+                <div className="certificate-modal" onClick={closeCertificate}>
+                    <div className="modal-content">
+                        <Image
+                            src={selectedCertificate}
+                            alt="Certificate"
+                            width={800}
+                            height={600}
+                            className="certificate-full-image"
+                        />
+                        <button 
+                            className="modal-close-button"
+                            onClick={() => setSelectedCertificate(null)}
+                        >
+                            &times;
+                        </button>
+                    </div>
+                </div>
+            )}
         </section>
     );
 }
