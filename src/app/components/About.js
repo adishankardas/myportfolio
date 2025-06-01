@@ -137,7 +137,7 @@ export default function About() {
                         <div className="edu-school"> To be finalized</div>
                         <div className="edu-degree">B.Sc. (Hons) Computer Science</div>
                         <div className="edu-year">2025 – 2028 (Expected)</div>
-                        <div className="edu-details">Here&#39;s how you can structure your education card to look like the LinkedIn style in your screenshot, including an icon, school name, degree, dates, description, and skills.</div>
+                        <div className="edu-details"> STarting a Bachelors (Hons) in Computer Science Building expertise in Cybersecurity, algorithms, databases, and Web Development to drive innovation in tech.</div>
                     </AnimatedSection>
                     <AnimatedSection className="education-card">
                         <div className="edu-school">St. Vincent Pallotti School</div>
