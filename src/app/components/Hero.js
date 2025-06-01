@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 const typingPhrases = [
   "Aspiring Software Engineer",
   "Full Stack Web Developer",
-  "Cybersecurity Enthusiast",
+  "Cybersecurity Analyst",
   "1st Year Computer Science Student"
 ];
 
