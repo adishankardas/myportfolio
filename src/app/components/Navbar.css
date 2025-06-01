@@ -121,52 +121,67 @@
   color: var(--colortheme);
 }
 
-/* Responsive */
+/* Responsive *//* Update these styles in your Navbar.css file */
+
 @media (max-width: 768px) {
   .nav-links {
-    background-color: #1a19198e;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: rgba(26, 25, 25, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 116%s;
-    height: 20vh;
-    margin: -24px;
-    padding: 1rem 2rem;
-    transition: transform .3s ease-in-out;
-    position: absolute;
-    top: 70px;
-    /* right: 0; */
-    transform: translatey(-230%);
+    width: 100%;
+    height: calc(100vh - 70px); /* Full height minus navbar */
+    margin: 0;
+    padding: 2rem;
+    gap: 2rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+    z-index: 999;
+    pointer-events: none;
   }
 
   .nav-links.active {
-    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links li a:hover {
+    background-color: rgba(var(--colortheme-rgb), 0.2);
+    color: var(--colortheme);
   }
 
   .hamburger {
     display: flex;
-    justify-content: end;
+    z-index: 1000;
   }
 
   .social-icons {
-    display: flex;
-    justify-content: center;
+    display: none; /* Hide social icons in mobile menu */
   }
 
-  .hero-section {
-    margin-top: 5rem;
-    /* Adjusted for fixed navbar */
+  /* Prevent scrolling when menu is open */
+  body.menu-open {
+    overflow: hidden;
   }
-
-  .hero-title {
-    font-size: 2.5rem;
-    /* Adjusted for smaller screens */
-  }
-
-  .hero-name {
-    font-size: 3rem;
-    /* Adjusted for smaller screens */
-  }
-  
 }

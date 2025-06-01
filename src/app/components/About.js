@@ -17,60 +17,60 @@ const fadeIn = {
     }
 };
 const certifications = [
-  {
-    id: 1,
-    title: "Google Cybersecurity Professional Certificate",
-    issuer: "Google",
-    date: "Issued Mar 2025",
-    credential: "",
-    details: "Skills: Threat & Vulnerability Management · Incident Response · Linux · SQL · SIEM · Security Frameworks · Python",
-    image: "/certificates/google-cyber.png"
-  },
-  {
-    id: 2,
-    title: "Introduction to Generative AI",
-    issuer: "Google Cloud Skills Boost",
-    date: "Issued Apr 2025",
-    credential: "Credential ID 14529349",
-    details: "Skills: Generative AI · AI Fundamentals · Google Cloud AI",
-    image: "/certificates/google_Ai.png"
-  },
-  {
-    id: 3,
-    title: "Career Essentials in Generative AI",
-    issuer: "Microsoft and LinkedIn",
-    date: "Issued Aug 2024",
-    credential: "",
-    details: "Skills: Artificial Intelligence (AI) · Generative AI · Machine Learning",
-    image: "/certificates/generative- ai-microsoft.png"
-  },
-  {
-    id: 4,
-    title: "ChatGPT 101",
-    issuer: "Simplilearn",
-    date: "Issued Jul 2024",
-    credential: "Credential ID 6875123",
-    details: "Skills: ChatGPT · Prompt Engineering · Responsible AI · AI Basics",
-    image: "/certificates/chatgpt.png"
-  },
-  {
-    id: 5,
-    title: "Web Development",
-    issuer: "Internshala",
-    date: "Issued Sep 2024",
-    credential: "Credential ID 5e025m83ayk",
-    details: "Skills: Web Development · HTML · CSS · JavaScript · React · MySQL · PHP · DBMS · AI in Web Dev",
-    image: "/certificates/web-develop.png"
-  },
-  {
-    id: 6,
-    title: "German Language A1",
-    issuer: "Udemy",
-    date: "Issued Aug 2024",
-    credential: "",
-    details: "Skills: German · Deutsch · A1 Certification · Language Basics",
-    image: "/certificates/germana1.png"
-  },
+    {
+        id: 1,
+        title: "Google Cybersecurity Professional Certificate",
+        issuer: "Google",
+        date: "Issued Mar 2025",
+        credential: "",
+        details: "Skills: Threat & Vulnerability Management · Incident Response · Linux · SQL · SIEM · Security Frameworks · Python",
+        image: "/certificates/google-cyber.png"
+    },
+    {
+        id: 2,
+        title: "Introduction to Generative AI",
+        issuer: "Google Cloud Skills Boost",
+        date: "Issued Apr 2025",
+        credential: "Credential ID 14529349",
+        details: "Skills: Generative AI · AI Fundamentals · Google Cloud AI",
+        image: "/certificates/google_Ai.png"
+    },
+    {
+        id: 3,
+        title: "Career Essentials in Generative AI",
+        issuer: "Microsoft and LinkedIn",
+        date: "Issued Aug 2024",
+        credential: "",
+        details: "Skills: Artificial Intelligence (AI) · Generative AI · Machine Learning",
+        image: "/certificates/generative- ai-microsoft.png"
+    },
+    {
+        id: 4,
+        title: "ChatGPT 101",
+        issuer: "Simplilearn",
+        date: "Issued Jul 2024",
+        credential: "Credential ID 6875123",
+        details: "Skills: ChatGPT · Prompt Engineering · Responsible AI · AI Basics",
+        image: "/certificates/chatgpt.png"
+    },
+    {
+        id: 5,
+        title: "Web Development",
+        issuer: "Internshala",
+        date: "Issued Sep 2024",
+        credential: "Credential ID 5e025m83ayk",
+        details: "Skills: Web Development · HTML · CSS · JavaScript · React · MySQL · PHP · DBMS · AI in Web Dev",
+        image: "/certificates/web-develop.png"
+    },
+    {
+        id: 6,
+        title: "German Language A1",
+        issuer: "Udemy",
+        date: "Issued Aug 2024",
+        credential: "",
+        details: "Skills: German · Deutsch · A1 Certification · Language Basics",
+        image: "/certificates/germana1.png"
+    },
 ];
 
 const AnimatedSection = ({ children, className = "" }) => (
@@ -156,106 +156,40 @@ export default function About() {
                     Experience
                 </motion.h2>
                 <div className="education-details">
+                  <AnimatedSection className="education-card">
+    <div className="edu-school">Full Stack Web Developer</div>
+    <div className="edu-degree">AstroShine</div>
+    <div className="edu-year">June 2022 - Present</div>
+    <div className="edu-year">Remote</div>
+    <div className="edu-details">
+        <ul>
+            <li>Developed and optimized dynamic web applications using <strong>HTML, CSS, JavaScript, PHP, and MySQL</strong>.</li>
+            <li>Designed CMS tools, reducing content editing time by <strong>70%</strong>.</li>
+            <li>Improved UI/UX, increasing user engagement by <strong>40%</strong>.</li>
+            <li>Implemented secure authentication and database management for optimized performance.</li>
+        </ul>
+    </div>
+</AnimatedSection>
+
                     <AnimatedSection className="education-card">
-                        <div className="edu-school">Full Stack Web Developer</div>
-                        <div className="edu-degree">AstroShine</div>
-                        <div className="edu-year">June 2022 - Present</div>
+                        <div className="edu-school">Cybersecurity Analyst (Virtual Internships)</div>
+                        <div className="edu-degree">Various Companies (TCS, Mastercard, ANZ, AIG, Telstra)</div>
+                        <div className="edu-year">March – May 2025</div>
                         <div className="edu-year">Remote</div>
-                        <div className="edu-details">Built responsive web applications using MERN Stack.
-
-                            Created CMS tools that reduced content editing time by 70%.
-
-                            Improved UI/UX, increasing user engagement by 40%.
-
-                            Integrated secure authentication and RESTful APIs.</div>
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                        <div className="edu-school"> Cybersecurity Analyst (Virtual Internship)
-                        </div>
-                        <div className="edu-degree">Tata Consultancy Services</div>
-                        <div className="edu-year">March 2025 (1 Month)</div>
-                        <div className="edu-year">Remote</div>
-                        <div className="edu-details">Completed job simulation focused on Identity and Access Management (IAM).
-
-                            Drafted documentation and presented access control strategies aligned with business needs.
-
-                        </div>
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                        <div className="edu-school">Cybersecurity Analyst (Virtual Internship)
-                        </div>
-                        <div className="edu-degree">Mastercard </div>
-                        <div className="edu-year">March 2025 (1 Month)
-
-                        </div>
-                        <div className="edu-year">Remote</div>
-                        <div className="edu-details">Worked with the Security Awareness Team.
-
-                            Helped detect phishing threats and create training content, improving awareness by 30%.
-
-                        </div>
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                        <div className="edu-school">Cybersecurity Analyst (Virtual Internship)
-                        </div>
-                        <div className="edu-degree">ANZ </div>
-                        <div className="edu-year">March – April 2025 (2 Months)
-
-                        </div>
-                        <div className="edu-year">Remote</div>
-                        <div className="edu-details">Conducted risk analysis, data protection audits, and presented findings in simulations.
-
-                        </div>
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                        <div className="edu-school">Cybersecurity Analyst (Virtual Internship)
-                        </div>
-                        <div className="edu-degree">AIG </div>
-                        <div className="edu-year">March 2025 (1 Month)
-
-                        </div>
-                        <div className="edu-year">Virtual internship</div>
-                        <div className="edu-details">Participated in Shields Up Simulation, detecting and analyzing simulated cyber threats.
-
-                        </div>
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                        <div className="edu-school">Cybersecurity Analyst (Virtual Internship)
-                        </div>
-                        <div className="edu-degree">Telstra  </div>
-                        <div className="edu-year">April – May 2025 (2 Months)
-
-
-
-                        </div>
-                        <div className="edu-year">Virtual internship</div>
-                        <div className="edu-details">Assisted in network security monitoring and alert analysis during the internship simulation.
-
-
-
-                        </div>
-                    </AnimatedSection>
-                    <AnimatedSection className="education-card">
-                        <div className="edu-school">Content Writer & Blogger
-
-                        </div>
-                        <div className="edu-degree">Marpu Foundation </div>
-                        <div className="edu-year">Oct – Nov 2024 (2 Months)
-
-
-
-                        </div>
-                        <div className="edu-year">Virtual internship</div>
-                        <div className="edu-details">Authored blog posts and campaign content, increasing reach by 25%.
-
-
-
+                        <div className="edu-details">
+                            <ul>
+                                <li>Conducted <strong>risk analysis</strong> and <strong>data protection audits</strong> in simulated environments.</li>
+                                <li>Assisted in <strong>network security monitoring</strong> and <strong>alert analysis</strong> at Telstra.</li>
+                                <li>Completed <strong>Identity and Access Management (IAM)</strong> job simulation at TCS.</li>
+                                <li>Helped detect <strong>phishing threats</strong> and designed security awareness content at Mastercard <em>(improving awareness by 30%)</em>.</li>
+                                <li>Participated in <strong>Shields Up Simulation</strong>, identifying and analyzing cyber threats at AIG.</li>
+                            </ul>
                         </div>
                     </AnimatedSection>
                 </div>
             </AnimatedSection>
 
-                 <AnimatedSection className="education">
+            <AnimatedSection className="education">
                 <motion.h2 className="education-title" variants={fadeIn}>
                     <SlBadge style={{ verticalAlign: "middle", marginRight: "0.5rem", color: "var(--colortheme)" }} />
                     Certifications
@@ -298,7 +232,7 @@ export default function About() {
                             height={600}
                             className="certificate-full-image"
                         />
-                        <button 
+                        <button
                             className="modal-close-button"
                             onClick={() => setSelectedCertificate(null)}
                         >

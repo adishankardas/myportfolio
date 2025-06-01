@@ -12,6 +12,12 @@ export default function Navbar() {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
+        if (menuOpen) {
+    document.body.classList.add('menu-open');
+  } else {
+    document.body.classList.remove('menu-open');
+  } [menuOpen]
+
         const onScroll = () => {
             const scrollTop = window.scrollY;
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;

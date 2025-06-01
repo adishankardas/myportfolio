@@ -126,15 +126,6 @@ export default function Projects() {
   },
   {
     id: 11,
-    title: 'Analog Clock',
-    description: 'Developed an analog clock using HTML, CSS, and JavaScript, showcasing front-end development skills. View at https://aadishankardas.github.io/AnalogClock/.',
-    tags: ['HTML5', 'CSS', 'JavaScript', 'Front-End Development'],
-    imageSrc: '/res/anaelogclock.png',
-    viewLink: 'https://adishankardas.github.io/AnalogClock/',
-    githubLink: 'https://github.com/adishankardas/AnalogClock',
-  },
-  {
-    id: 12,
     title: 'Windows 11 UI',
     description: 'Designed a Microsoft Windows 11 UI using HTML5, CSS, and JavaScript, focusing on UI/UX and front-end development. View at https://aadishankardas.github.io/Windows11.github.io/.',
     tags: ['HTML5', 'CSS', 'JavaScript', 'UI/UX', 'Front-End Development'],
@@ -143,7 +134,7 @@ export default function Projects() {
     githubLink: 'https://github.com/adishankardas/Windows11.github.io',
   },
   {
-    id: 13,
+    id: 12,
     title: 'Front-End Website Design',
     description: 'Built a front-end website for a laptop store using HTML5, CSS, and JavaScript, emphasizing web development and user experience. View at https://adishankardas.github.io/LaptopStore.github.io/.',
     tags: ['HTML5', 'CSS', 'JavaScript', 'Web Development', 'Front-End Development'],

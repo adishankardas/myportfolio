@@ -212,3 +212,18 @@
         right: 10px;
     }
 }
+
+.edu-details ul {
+    padding-left: 20px;
+}
+
+.edu-details ul li {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 4px 0;
+}
+
+.edu-details ul li strong {
+    color: var(--colortheme-light); /* Emphasize key points */
+}
