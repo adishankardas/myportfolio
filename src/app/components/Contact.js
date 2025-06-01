@@ -48,12 +48,12 @@ export default function Contact() {
               {
                 icon: <MdEmail size={28} />,
                 label: "Email",
-                value: "your.email@example.com"
+                value: "adishankardas@gmail.com"
               },
               {
                 icon: <MdLocationOn size={28} />,
                 label: "Location",
-                value: "Your City, Country"
+                value: "India"
               }
             ].map((item, index) => (
               <motion.div

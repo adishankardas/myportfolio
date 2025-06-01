@@ -31,37 +31,52 @@ export default function Skills() {
 
       <div className="skills-unique-grid">
         {[
-          {
-            icon: "</>",
-            title: "Programming",
-            skills: ["JavaScript", "Python", "Java"]
-          },
-          {
-            icon: "🧩",
-            title: "Framework / Library",
-            skills: ["React.js", "Bootstrap", "jQuery"]
-          },
-          {
-            icon: "🌐",
-            title: "Web & Database",
-            skills: ["Tailwind CSS", "HTML5", "CSS3", "MongoDB", "Node.js", "AWS", "Docker"]
-          },
-          {
-            icon: "🛠️",
-            title: "Tool",
-            skills: ["Git", "GitHub", "VS Code", "Canva", "PyCharm", "Webpack", "IntelliJ IDEA"]
-          },
-          {
-            icon: "☁️",
-            title: "Cloud & DevOps",
-            skills: ["AWS EC2", "SSL Configuration"]
-          },
-          {
-            icon: "📝",
-            title: "Development Methodology",
-            skills: ["Agile Practices", "Unit Testing (JUnit)"]
-          }
-        ].map((skill, index) => (
+  {
+    icon: "</>",
+    title: "Programming",
+    skills: ["JavaScript", "Python", "SQL", "Bash", "PowerShell"]
+  },
+  {
+    icon: "🧩",
+    title: "Framework / Library",
+    skills: ["React.js", "Bootstrap", "jQuery"]
+  },
+  {
+    icon: "🌐",
+    title: "Web & Database",
+    skills: ["Tailwind CSS", "HTML5", "CSS3", "MongoDB", "Node.js", "MySQL"]
+  },
+  {
+    icon: "🛠️",
+    title: "Tool",
+    skills: ["Git", "GitHub", "VS Code", "Canva", "PyCharm", "Wireshark", "Metasploit", "Nessus", "Burp Suite", "Splunk"]
+  },
+  {
+    icon: "🔒",
+    title: "Cybersecurity",
+    skills: ["Penetration Testing", "Vulnerability Assessment", "Network Security", "Incident Response", "Digital Forensics", "SIEM", "IAM"]
+  },
+  {
+    icon: "☁️",
+    title: "Cloud & DevOps",
+    skills: ["AWS EC2", "SSL Configuration", "Docker"]
+  },
+  {
+    icon: "📝",
+    title: "Development Methodology",
+    skills: ["Agile Practices", "Unit Testing (JUnit)"]
+  },
+  {
+    icon: "🎨",
+    title: "Design & Content",
+    skills: ["UI/UX Design", "Content Creation", "Adobe Photoshop"]
+  },
+  {
+    icon: "🛡️",
+    title: "Security Frameworks",
+    skills: ["NIST", "ISO 27001", "GDPR", "SOC 2"]
+  }
+].map((skill, index) => (
           <motion.div
             key={index}
             className="skill-card"

@@ -22,7 +22,7 @@
   left: 0;
   height: 4px;
   width: 0;
-  background: linear-gradient(90deg, var(--colortheme),  var(--colortheme-light));
+  background: linear-gradient(90deg, var(--colortheme), #ffff);
   z-index: 2000;
   transition: width 0.2s ease;
   border-radius: 2px 2px 0 0;
