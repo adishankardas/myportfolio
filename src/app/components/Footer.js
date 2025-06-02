@@ -53,7 +53,7 @@ export default function Footer() {
       {/* Copyright Section */}
       <div className="footer-bottom">
         <p className="footer-copyright">
-          &copy; {new Date().getFullYear()} Adi Shankar Das. All rights reserved.
+          &copy; {new Date().getFullYear()} Built with ❤️ by Adi Shankar Das. All rights reserved.
         </p>
       </div>
     </footer>
