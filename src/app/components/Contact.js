@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { motion } from "framer-motion";
 import './Contact.css';
@@ -14,6 +14,30 @@ const fadeIn = {
 };
 
 export default function Contact() {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch("https://formsubmit.co/ajax/adishankardas@gmail.com", {
+      method: "POST",
+      headers: {
+        "Accept": "application/json"
+      },
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+        setSubmitted(true);
+        form.reset();
+      }
+    })
+    .catch(error => console.error(error));
+  };
+
   return (
     <section id="contact" className="contact-section">
       <motion.div
@@ -22,15 +46,14 @@ export default function Contact() {
         viewport={{ once: true }}
         variants={fadeIn}
       >
-        <h2 className="contact-title">Let&apos;s Build Something Great
-</h2>
+        <h2 className="contact-title">Let&apos;s Build Something Great</h2>
         <p className="contact-subtitle">
           Let&apos;s discuss your next project and collaborate.
         </p>
       </motion.div>
 
       <div className="contact-grid">
-        {/* Left: Info */}
+        {/* Left Info */}
         <motion.div 
           className="contact-info"
           initial="hidden"
@@ -78,16 +101,19 @@ export default function Contact() {
         {/* Right: Form */}
         <motion.form
           className="contact-form"
-          onSubmit={e => e.preventDefault()}
+          onSubmit={handleSubmit}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px 0px -50px 0px" }}
           variants={fadeIn}
           transition={{ delay: 0.2 }}
         >
+          <input type="hidden" name="_captcha" value="false" />
+
           <div className="contact-form-row">
             <motion.input
               type="text"
+              name="name"
               placeholder="Your Name"
               className="contact-input"
               required
@@ -95,6 +121,7 @@ export default function Contact() {
             />
             <motion.input
               type="email"
+              name="email"
               placeholder="Your Email"
               className="contact-input"
               required
@@ -103,12 +130,14 @@ export default function Contact() {
           </div>
           <motion.input
             type="text"
+            name="subject"
             placeholder="Subject"
             className="contact-input"
             required
             variants={fadeIn}
           />
           <motion.textarea
+            name="message"
             placeholder="Your Message"
             className="contact-textarea"
             required
@@ -121,6 +150,17 @@ export default function Contact() {
           >
             Send <span style={{ marginLeft: 8 }}>✈️</span>
           </motion.button>
+
+          {submitted && (
+            <motion.p
+              className="contact-success-message"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              style={{ marginTop: "1rem", color: "#4ade80", textAlign: "center" }}
+            >
+               Message sent successfully!
+            </motion.p>
+          )}
         </motion.form>
       </div>
     </section>
