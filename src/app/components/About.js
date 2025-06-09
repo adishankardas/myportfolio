@@ -183,7 +183,7 @@ export default function About() {
                                 <li>Completed <strong>Identity and Access Management (IAM)</strong> job simulation at TCS.</li>
                                 <li>Helped detect <strong>phishing threats</strong> and designed security awareness content at Mastercard <em>(improving awareness by 30%)</em>.</li>
                                 <li>Participated in <strong>Shields Up Simulation</strong>, identifying and analyzing cyber threats at AIG.</li>
-                                <li>Explored real-world cybersecurity operations and <strong>incident response</strong>  in a Deloitte job simulation via Forage.
+                                <li>Explored real-world <strong>cybersecurity operations and incident response</strong>  in a Deloitte job simulation via Forage.
 
 </li>
                             </ul>
