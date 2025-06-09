@@ -173,7 +173,7 @@ export default function About() {
 
                     <AnimatedSection className="education-card">
                         <div className="edu-school">Cybersecurity Analyst (Virtual Internships)</div>
-                        <div className="edu-degree">Various Companies (TCS, Mastercard, ANZ, AIG, Telstra)</div>
+                        <div className="edu-degree">Various Companies (TCS, Mastercard, ANZ, AIG, Telstra, Deloitte)</div>
                         <div className="edu-year">March – May 2025</div>
                         <div className="edu-year">Remote</div>
                         <div className="edu-details">
@@ -183,6 +183,9 @@ export default function About() {
                                 <li>Completed <strong>Identity and Access Management (IAM)</strong> job simulation at TCS.</li>
                                 <li>Helped detect <strong>phishing threats</strong> and designed security awareness content at Mastercard <em>(improving awareness by 30%)</em>.</li>
                                 <li>Participated in <strong>Shields Up Simulation</strong>, identifying and analyzing cyber threats at AIG.</li>
+                                <li>Explored real-world cybersecurity operations and <strong>incident response</strong>  in a Deloitte job simulation via Forage.
+
+</li>
                             </ul>
                         </div>
                     </AnimatedSection>
