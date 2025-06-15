@@ -142,6 +142,16 @@ export default function Projects() {
     viewLink: 'https://adishankardas.github.io/LaptopStore.github.io/',
     githubLink: 'https://github.com/adishankardas/LaptopStore.github.io',
   },
+  {
+  id: 13,
+  title: 'Advanced TODO App with Drag & Drop',
+  description: 'Designed and built a powerful TODO web app featuring drag-and-drop functionality, multi-project management, editable tasks, and real-time task movement across columns. Built using React, Zustand, and Tailwind CSS. Deployed with Vercel.',
+  tags: ['React', 'Zustand', 'Tailwind CSS', 'TypeScript', 'Drag & Drop'],
+  imageSrc: '/res/todoapp.png',
+  viewLink: 'https://todo-app-nine-iota-50.vercel.app/',
+  githubLink: 'https://github.com/adishankardas/todo-app', // replace if your repo URL is different
+},
+
 ];
 
   return (
