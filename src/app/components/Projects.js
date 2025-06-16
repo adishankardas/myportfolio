@@ -33,50 +33,50 @@ AnimatedSection.propTypes = {
 };
 
 export default function Projects() {
-  const projects = [
+ const projects = [
   {
     id: 1,
-    title: 'Vulnerability Assessment Report',
-    description: 'Conducted a vulnerability assessment on a Linux server with MySQL, focusing on access controls over three months using NIST SP 800-30 Rev. 1. Identified risks from networking, software faults, and OS vulnerabilities, recommending multi-factor authentication, regular software updates, and least privilege principles.',
-    tags: ['Cybersecurity', 'NIST SP 800-30', 'MySQL', 'Linux', 'Risk Assessment'],
-    imageSrc: '/res/vulassesreport.jpg',
-    viewLink: 'https://drive.google.com/file/d/14q7PrwTniWEdW6UNArhrN4vpSvvjvGkL/view?usp=sharing',
-    githubLink: '#',
+    title: 'Front-End Website Design',
+    description: 'Built a front-end website for a laptop store using HTML5, CSS, and JavaScript, emphasizing web development and user experience. View at https://adishankardas.github.io/LaptopStore.github.io/.',
+    tags: ['HTML5', 'CSS', 'JavaScript', 'Web Development', 'Front-End Development'],
+    imageSrc: '/res/frontendwebdesign.png',
+    viewLink: 'https://todo-app-nine-iota-50.vercel.app/',
+    githubLink: 'https://github.com/adishankardas/Todo-App',
   },
   {
     id: 2,
-    title: 'File Permissions in Linux',
-    description: 'Secured file permissions for a research team’s directory in a large organization. Used ls -la to check permissions, modified file and directory access (e.g., chmod 440 for hidden files, chmod 700 for directories) to restrict unauthorized access while ensuring compliance with security policies.',
-    tags: ['Linux', 'File Permissions', 'Cybersecurity', 'chmod'],
-    imageSrc: '/res/filepermlinux.jpg',
-    viewLink: 'https://drive.google.com/file/d/1AQDwqZB4vozA8ceMVbjCrqo839TCTdDd/view?usp=sharing',
+    title: 'AI Voice Assistant (JARVIS)',
+    description: 'Created an AI Voice Assistant named JARVIS using Python, capable of performing various tasks. Demo available at https://www.youtube.com/watch?v=Rj0cIZXcwk8.',
+    tags: ['Python', 'AI', 'Voice Assistant'],
+    imageSrc: '/res/aivoiceasss.png',
+    viewLink: 'https://www.youtube.com/watch?v=Rj0cIZXcwk8',
     githubLink: '#',
   },
   {
     id: 3,
-    title: 'Incident Report Analysis',
-    description: 'Analyzed a DDoS attack on a social media marketing organization’s network caused by ICMP packet flooding. Implemented firewall rules, IP verification, and IDS/IPS systems to mitigate and detect future attacks, following NIST framework guidelines.',
-    tags: ['Cybersecurity', 'DDoS', 'NIST', 'Firewall', 'IDS/IPS'],
-    imageSrc: '/res/incidentreport.jpg',
-    viewLink: 'https://drive.google.com/file/d/1iPDWxpLiMIsp2lgwRs3Lw7ov0q5JU2Ca/view?usp=sharing',
-    githubLink: '#',
+    title: 'Snake Game with FPS',
+    description: 'Developed a Snake Game with FPS using Python, featuring a classic snake game experience with enhanced performance. Demo available at https://www.youtube.com/watch?v=mWdsj895CtQ.',
+    tags: ['Python', 'AI', 'Voice Assistant'],
+    imageSrc: '/res/snakegame.png',
+    viewLink: 'https://www.youtube.com/watch?v=mWdsj895CtQ',
+    githubLink: 'https://github.com/adishankardas/My_New_Snake_Game_With-_FPS',
   },
   {
     id: 4,
-    title: 'Algorithm for File Updates in Python',
-    description: 'Developed a Python script to manage an allow list of IP addresses for a healthcare company. The script reads, updates, and removes IP addresses from a file, ensuring only authorized access to restricted content, enhancing security automation.',
-    tags: ['Python', 'Cybersecurity', 'File Management', 'IP Allow List'],
-    imageSrc: '/res/algoforfileupdate.jpg',
-    viewLink: 'https://drive.google.com/file/d/164E5xTfD6Ji1_WQAHh15sSU_d9IsAw-h/view?usp=sharing',
-    githubLink: '#',
+    title: 'Windows 11 UI',
+    description: 'Designed a Microsoft Windows 11 UI using HTML5, CSS, and JavaScript, focusing on UI/UX and front-end development. View at https://aadishankardas.github.io/Windows11.github.io/.',
+    tags: ['HTML5', 'CSS', 'JavaScript', 'UI/UX', 'Front-End Development'],
+    imageSrc: '/res/win11.png',
+    viewLink: 'https://adishankardas.github.io/Windows11.github.io/',
+    githubLink: 'https://github.com/adishankardas/Windows11.github.io',
   },
   {
     id: 5,
-    title: 'Incident Handler’s Journal',
-    description: 'Documented a ransomware incident at a U.S. healthcare clinic caused by phishing emails. Captured the 5 W’s (Who, What, When, Where, Why) and noted operational disruptions due to encrypted system files, highlighting the need for employee awareness training.',
-    tags: ['Cybersecurity', 'Ransomware', 'Incident Response', 'Phishing'],
-    imageSrc: '/res/incidenthandlar.jpg',
-    viewLink: 'https://drive.google.com/file/d/1ZLBaDgNBxXDFSg4Ef10IxynrNfYI9ifc/view?usp=sharing',
+    title: 'AstroShine – Astrology Web App',
+    description: 'Developed a full-stack astrology platform featuring horoscope generation, birth chart insights, blogs, and e-commerce integration. Includes blog search, donations, and authentication.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySql'],
+    imageSrc: '/res/astroshine.png',
+    viewLink: 'https://astroshine.in/',
     githubLink: '#',
   },
   {
@@ -90,78 +90,78 @@ export default function Projects() {
   },
   {
     id: 7,
-  title: 'Full Stack Personal Branding Website',
-  description: 'Designed and built a complete personal branding site with blogs, portfolio, store, e-book selling features, and responsive design. Includes dark mode and animation.',
-  tags: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS'],
-  imageSrc: '/res/mywebsite.png',
-  viewLink: 'https://mywebsite-frontend-nu.vercel.app/', // Replace with actual domain if hosted
-  githubLink: 'https://github.com/adishankardas/mywebsite-frontend', // Replace with actual repo
+    title: 'Incident Handler’s Journal',
+    description: 'Documented a ransomware incident at a U.S. healthcare clinic caused by phishing emails. Captured the 5 W’s (Who, What, When, Where, Why) and noted operational disruptions due to encrypted system files, highlighting the need for employee awareness training.',
+    tags: ['Cybersecurity', 'Ransomware', 'Incident Response', 'Phishing'],
+    imageSrc: '/res/incidenthandlar.jpg',
+    viewLink: 'https://drive.google.com/file/d/1ZLBaDgNBxXDFSg4Ef10IxynrNfYI9ifc/view?usp=sharing',
+    githubLink: '#',
   },
   {
     id: 8,
- title: 'AstroShine – Astrology Web App',
-  description: 'Developed a full-stack astrology platform featuring horoscope generation, birth chart insights, blogs, and e-commerce integration. Includes blog search, donations, and authentication.',
-  tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySql'],
-  imageSrc: '/res/astroshine.png',
-  viewLink: 'https://astroshine.in/', // Replace with actual link if deployed
-  githubLink: '#', // Replace with actual repo
+    title: 'Algorithm for File Updates in Python',
+    description: 'Developed a Python script to manage an allow list of IP addresses for a healthcare company. The script reads, updates, and removes IP addresses from a file, ensuring only authorized access to restricted content, enhancing security automation.',
+    tags: ['Python', 'Cybersecurity', 'File Management', 'IP Allow List'],
+    imageSrc: '/res/algoforfileupdate.jpg',
+    viewLink: 'https://drive.google.com/file/d/164E5xTfD6Ji1_WQAHh15sSU_d9IsAw-h/view?usp=sharing',
+    githubLink: '#',
   },
   {
     id: 9,
-    title: 'AI Voice Assistant (JARVIS)',
-    description: 'Created an AI Voice Assistant named JARVIS using Python, capable of performing various tasks. Demo available at https://www.youtube.com/watch?v=Rj0cIZXcwk8.',
-    tags: ['Python', 'AI', 'Voice Assistant'],
-    imageSrc: '/res/aivoiceasss.png',
-    viewLink: 'https://www.youtube.com/watch?v=Rj0cIZXcwk8',
+    title: 'Incident Report Analysis',
+    description: 'Analyzed a DDoS attack on a social media marketing organization’s network caused by ICMP packet flooding. Implemented firewall rules, IP verification, and IDS/IPS systems to mitigate and detect future attacks, following NIST framework guidelines.',
+    tags: ['Cybersecurity', 'DDoS', 'NIST', 'Firewall', 'IDS/IPS'],
+    imageSrc: '/res/incidentreport.jpg',
+    viewLink: 'https://drive.google.com/file/d/1iPDWxpLiMIsp2lgwRs3Lw7ov0q5JU2Ca/view?usp=sharing',
     githubLink: '#',
   },
   {
     id: 10,
-    title: 'Snake Game with FPS',
-    description: 'Developed a Snake Game with FPS using Python, featuring a classic snake game experience with enhanced performance. Demo available at https://www.youtube.com/watch?v=mWdsj895CtQ.',
-    tags: ['Python', 'AI', 'Voice Assistant'],
-    imageSrc: '/res/snakegame.png',
-    viewLink: 'https://www.youtube.com/watch?v=mWdsj895CtQ',
-    githubLink: 'https://github.com/adishankardas/My_New_Snake_Game_With-_FPS',
+    title: 'File Permissions in Linux',
+    description: 'Secured file permissions for a research team’s directory in a large organization. Used ls -la to check permissions, modified file and directory access (e.g., chmod 440 for hidden files, chmod 700 for directories) to restrict unauthorized access while ensuring compliance with security policies.',
+    tags: ['Linux', 'File Permissions', 'Cybersecurity', 'chmod'],
+    imageSrc: '/res/filepermlinux.jpg',
+    viewLink: 'https://drive.google.com/file/d/1AQDwqZB4vozA8ceMVbjCrqo839TCTdDd/view?usp=sharing',
+    githubLink: '#',
   },
   {
     id: 11,
-    title: 'Windows 11 UI',
-    description: 'Designed a Microsoft Windows 11 UI using HTML5, CSS, and JavaScript, focusing on UI/UX and front-end development. View at https://aadishankardas.github.io/Windows11.github.io/.',
-    tags: ['HTML5', 'CSS', 'JavaScript', 'UI/UX', 'Front-End Development'],
-    imageSrc: '/res/win11.png',
-    viewLink: 'https://adishankardas.github.io/Windows11.github.io/',
-    githubLink: 'https://github.com/adishankardas/Windows11.github.io',
+    title: 'Vulnerability Assessment Report',
+    description: 'Conducted a vulnerability assessment on a Linux server with MySQL, focusing on access controls over three months using NIST SP 800-30 Rev. 1. Identified risks from networking, software faults, and OS vulnerabilities, recommending multi-factor authentication, regular software updates, and least privilege principles.',
+    tags: ['Cybersecurity', 'NIST SP 800-30', 'MySQL', 'Linux', 'Risk Assessment'],
+    imageSrc: '/res/vulassesreport.jpg',
+    viewLink: 'https://drive.google.com/file/d/14q7PrwTniWEdW6UNArhrN4vpSvvjvGkL/view?usp=sharing',
+    githubLink: '#',
   },
   {
     id: 12,
-    title: 'Front-End Website Design',
-    description: 'Built a front-end website for a laptop store using HTML5, CSS, and JavaScript, emphasizing web development and user experience. View at https://adishankardas.github.io/LaptopStore.github.io/.',
-    tags: ['HTML5', 'CSS', 'JavaScript', 'Web Development', 'Front-End Development'],
-    imageSrc: '/res/frontendwebdesign.png',
-    viewLink: 'https://todo-app-nine-iota-50.vercel.app/',
-    githubLink: 'https://github.com/adishankardas/Todo-App',
+    title: 'Full Stack Personal Branding Website',
+    description: 'Designed and built a complete personal branding site with blogs, portfolio, store, e-book selling features, and responsive design. Includes dark mode and animation.',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS'],
+    imageSrc: '/res/mywebsite.png',
+    viewLink: 'https://mywebsite-frontend-nu.vercel.app/',
+    githubLink: 'https://github.com/adishankardas/mywebsite-frontend',
   },
   {
-  id: 13,
-  title: 'Advanced TODO App with Drag & Drop',
-  description: 'Designed and built a powerful TODO web app featuring drag-and-drop functionality, multi-project management, editable tasks, and real-time task movement across columns. Built using React, Zustand, and Tailwind CSS. Deployed with Vercel.',
-  tags: ['React', 'Zustand', 'Tailwind CSS', 'TypeScript', 'Drag & Drop'],
-  imageSrc: '/res/todoapp.png',
-  viewLink: 'https://todo-app-nine-iota-50.vercel.app/',
-  githubLink: 'https://github.com/adishankardas/todo-app', // replace if your repo URL is different
-},{
-  id: 14,
-  title: 'AI Cover Letter Generator (CLI Tool)',
-  description: 'Developed a command-line tool using Python and Google Gemini API that generates personalized, professional cover letters based on user input. Features include dotenv-based API key handling, interactive CLI prompts, and instant text generation using Gemini’s LLM. Ideal for developers and job seekers looking to automate their application process.',
-  tags: ['Python', 'Google Gemini API', 'CLI Tool', 'AI', 'Dotenv'],
-  imageSrc: '/res/ai-cover-letter.png',
-  viewLink: 'https://youtu.be/C9lB34RXLWk',
-  githubLink: 'https://github.com/adishankardas/cover_letter_generator',
-}
-
-
+    id: 13,
+    title: 'Advanced TODO App with Drag & Drop',
+    description: 'Designed and built a powerful TODO web app featuring drag-and-drop functionality, multi-project management, editable tasks, and real-time task movement across columns. Built using React, Zustand, and Tailwind CSS. Deployed with Vercel.',
+    tags: ['React', 'Zustand', 'Tailwind CSS', 'TypeScript', 'Drag & Drop'],
+    imageSrc: '/res/todoapp.png',
+    viewLink: 'https://todo-app-nine-iota-50.vercel.app/',
+    githubLink: 'https://github.com/adishankardas/todo-app',
+  },
+  {
+    id: 14,
+    title: 'AI Cover Letter Generator (CLI Tool)',
+    description: 'Developed a command-line tool using Python and Google Gemini API that generates personalized, professional cover letters based on user input. Features include dotenv-based API key handling, interactive CLI prompts, and instant text generation using Gemini’s LLM. Ideal for developers and job seekers looking to automate their application process.',
+    tags: ['Python', 'Google Gemini API', 'CLI Tool', 'AI', 'Dotenv'],
+    imageSrc: '/res/ai-cover-letter.png',
+    viewLink: 'https://youtu.be/C9lB34RXLWk',
+    githubLink: 'https://github.com/adishankardas/cover_letter_generator',
+  }
 ];
+
 
   return (
     <section id="projects" className="projects-section">
@@ -179,7 +179,7 @@ export default function Projects() {
       </motion.div>
       
       <div className="projects-grid">
-        {projects.map((project, index) => (
+        {projects .slice().reverse().map((project, index) => (
           <motion.article 
             key={project.id}
             className="project-card"
