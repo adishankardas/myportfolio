@@ -40,8 +40,8 @@ export default function Projects() {
     description: 'Built a front-end website for a laptop store using HTML5, CSS, and JavaScript, emphasizing web development and user experience. View at https://adishankardas.github.io/LaptopStore.github.io/.',
     tags: ['HTML5', 'CSS', 'JavaScript', 'Web Development', 'Front-End Development'],
     imageSrc: '/res/frontendwebdesign.png',
-    viewLink: 'https://todo-app-nine-iota-50.vercel.app/',
-    githubLink: 'https://github.com/adishankardas/Todo-App',
+    viewLink: 'https://adishankardas.github.io/LaptopStore.github.io/',
+    githubLink: 'https://github.com/adishankardas/LaptopStore.github.io',
   },
   {
     id: 2,
