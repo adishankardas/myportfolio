@@ -150,7 +150,16 @@ export default function Projects() {
   imageSrc: '/res/todoapp.png',
   viewLink: 'https://todo-app-nine-iota-50.vercel.app/',
   githubLink: 'https://github.com/adishankardas/todo-app', // replace if your repo URL is different
-},
+},{
+  id: 14,
+  title: 'AI Cover Letter Generator (CLI Tool)',
+  description: 'Developed a command-line tool using Python and Google Gemini API that generates personalized, professional cover letters based on user input. Features include dotenv-based API key handling, interactive CLI prompts, and instant text generation using Gemini’s LLM. Ideal for developers and job seekers looking to automate their application process.',
+  tags: ['Python', 'Google Gemini API', 'CLI Tool', 'AI', 'Dotenv'],
+  imageSrc: '/res/ai-cover-letter.png',
+  viewLink: 'https://youtu.be/C9lB34RXLWk',
+  githubLink: 'https://github.com/adishankardas/cover_letter_generator',
+}
+
 
 ];
 
